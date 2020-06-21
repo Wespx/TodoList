@@ -66,7 +66,7 @@ window.addEventListener('beforeunload', function() {
 window.addEventListener('load', function() {
     const storageData = JSON.parse(localStorage.getItem('storageData'));
     
-    if (storageData.length !== 0) {
+    if (storageData !== null) {
         todoData = storageData;
     }
     
